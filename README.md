@@ -1,1 +1,0 @@
-# zadania_pracownia_witryniaplikacji_wysokinski
