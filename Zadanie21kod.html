@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 21</title>
+</head>
+<body>
+    <textarea>
+    <html>
+<head>
+<title>Zadanie 21</title>
+ <script language="JavaScript">
+function drabina_wysokinski(d_wys,x_wys){
+ d_wysokinski=parseFloat(d_wys)
+ x_wysokinski=parseFloat(x_wys)
+ drabina=Math.sqrt((d_wysokinski*d_wysokinski) + (x_wysokinski*x_wysokinski))
+ document.getElementsByName('drabina')[0].value=drabina.toFixed(2);
+ alert("drabina="+drabina.toFixed(2)+" cm^2");
+ wprowadz_liczbe.innerHTML="drabina="+drabina.toFixed(2)+" cm^2"+"<br>";
+}
+function alfa_wysokinski(d_wys,x_wys){
+ d_wysokinski=parseFloat(d_wys)
+ x_wysokinski=parseFloat(x_wys)
+ alfa=Math.atan(d_wysokinski/x_wysokinski)*(180/Math.PI)
+ document.getElementsByName('alfa')[0].value=alfa.toFixed(2);
+ alert("alfa="+alfa.toFixed(2)+" cm");
+ wprowadz_liczbe2.innerHTML="alfa="+alfa.toFixed(2)+"cm";
+}
+ </script>
+ </head>
+ <body>
+Obliczenia pola i obwodu prostokąta
+ <br><br>
+ <form name="formularz" action="..." onsubmit="drabina_wysokinski(this.promien.value,this.wysokosc.value);
+ alfa_wysokinski(this.promien.value,this.wysokosc.value);return false">
+ Podaj d=
+ <input size="6" name="promien">
+ Podaj x=
+ <input size="6" name="wysokosc">
+ <br><br>
+ <input TYPE="submit" Value="oblicz" >
+ <br><br>
+ Drabina=
+ <input size="6" name="drabina">
+ Alfa=
+ <input size="6" name="alfa">
+ </form>
+ <table>
+ <tr id="wprowadz_liczbe"></tr>
+ <tr id="wprowadz_liczbe2"></tr>
+ </table>
+ </body>
+ </html>
+</textarea>
+</body>
+</html>

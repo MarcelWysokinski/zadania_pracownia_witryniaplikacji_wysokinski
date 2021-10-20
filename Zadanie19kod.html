@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kod zadanie 19</title>
+</head>
+<body>
+    <textarea>
+        <html>
+            <head>
+            <title>
+             Przykład pole i obwod prostokata
+            </title>
+            <meta charset="UTF-8">
+             <script language="JavaScript">
+            function pole_wys(a_wys, b_wys)
+            {
+             a_dana_wys=parseFloat(a_wys)
+             b_dana_wys=parseFloat(b_wys)
+             Pole=a_dana_wys*b_dana_wys
+             document.getElementsByName('pole')[0].value=Pole.toFixed(2); /* na dokument */
+             alert("Pole="+Pole.toFixed(2)+" cm^2"); /*do okna Alert */
+             wprowadz_pole_wys.innerHTML="Pole="+Pole.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+            }
+            function obwod_wys(a_wys,b_wys)
+            {
+             a_dana_wys=parseFloat(a_wys)
+             b_dana_wys=parseFloat(b_wys)
+             Obwod=a_dana_wys+a_dana_wys+b_dana_wys+b_dana_wys
+             document.getElementsByName('obwod')[0].value=Obwod.toFixed(2);
+             alert("Obwod="+Obwod.toFixed(2)+" cm");
+             wprowadz_obwod_wys.innerHTML="Obwod="+Obwod.toFixed(2)+"cm";
+            }
+             </script>
+             </head>
+             <body>
+             Obliczanie pola i obwodu prostokata
+             <br> <br>
+             <form name="formularz" action="..." onsubmit="pole_wys(this.promien.value,this.wysokosc.value);
+             obowod_wys(this.promien.value,this.wysokosc.value);return false">
+             Podaj a=
+             <input size="6" name="promien">
+             Podaj b=
+             <input size="6" name="wysokosc">
+             <br>
+             <br>
+             <input TYPE="submit" Value="oblicz" >
+             <br>
+             <br>
+             Pole=
+             <input size="6" name="pole">
+             Obwod=
+             <input size="6" name="obwod">
+             </form>
+             <table>
+             <tr id="wprowadz_pole_wys"></tr>
+             <tr id="wprowadz_obwod_wys"></tr>
+             </table>
+             </body>
+             </html>
+
+    </textarea>
+    
+</body>
+</html>
