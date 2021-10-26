@@ -1,0 +1,83 @@
+
+zadania 1
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int i;
+       
+
+        System.out.println("W, ktorym roku sie urodziles?");
+        Scanner scan = new Scanner(System.in);
+        int rok =scan.nextInt();
+        
+        do{
+           rok++;
+           System.out.println(rok);
+       
+    }
+      while(rok<2021);
+      System.out.println(rok);
+       
+     
+       
+    }
+}
+
+
+
+
+
+zadanie 2
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    
+        System.out.println("Podaj liczbe:");
+        Scanner scan = new Scanner(System.in);
+         int dana=scan.nextInt();
+   for(int i=0;i<=1000;i++){
+       
+       if(i%dana==0){
+           System.out.println("Liczba " + i+ " jest podzielna przez " + dana);
+       }
+   }
+    }
+}
+
+
+zadanie 3
+
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main (String[] args) {
+    
+      
+          System.out.println("Podaj liczbe:");
+        Scanner scan = new Scanner(System.in);
+         int n=scan.nextInt();
+ 
+        System.out.printf("Silnia (wersja iteracyjna) liczby: %d wynosi: %d\n", n, silniaIteracja(n));
+        System.out.printf("Silnia (wersja rekurencyjna) liczby: %d wynosi: %d", n, silniaRekurencja(n));
+    }
+ 
+    public static long silniaIteracja(int n) {
+        long wynik = 1;
+ 
+        for (int i = n; i > 0; i--) {
+            wynik *= i;
+        }
+ 
+        return wynik;
+    }
+ 
+    public static long silniaRekurencja(int n) {
+        if (n < 1) {
+            return 1;
+        } else {
+            return n * silniaRekurencja(n - 1);
+        }
+    }
+}
