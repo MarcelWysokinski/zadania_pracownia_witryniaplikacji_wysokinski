@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 71</title>
+     <style>
+        div{
+            text-align: center;
+        }
+    </style>
+     </head>
+    <body>
+        <div>
+     <script language="JavaScript">
+        let x = prompt("Podaj swoje imie: ", "");
+        var a =  ((x.length)%4)+5;
+        let y = prompt("Podaj swoje nazwisko: ", "");
+        var b =  ((y.length)%6)+20;
+     
+     for(i=1;i<=a;i++){
+    document.write("*")
+     }
+     document.write("<br>")
+
+     for(j=1;j<=(b-2);j++){
+     document.write("*")
+
+     for(z=1;z<=(a-2);z++){
+     document.write("&ensp;")
+     }
+     document.write("*")
+     document.write("<br>")
+     }
+     for(q=1;q<=a;q++){
+    document.write("*")
+     }
+     </script>
+    </div>
+    </body>
+    </html>
