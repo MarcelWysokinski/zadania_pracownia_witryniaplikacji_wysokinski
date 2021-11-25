@@ -1,0 +1,78 @@
+<html>
+<body>
+
+<script language="JavaScript">
+
+var licznik_wys=0;
+for(var i=-2.01;i<=2.01;i++){
+for (var  j=-2.01; j<=2.01;j++){
+d=Math.sqrt(i*i+j*j);
+if(d<=2.01){licznik_wys++;}
+}
+}
+document.write("licznik="+licznik_wys+"<br>");
+
+
+var licznik_wys1=0;
+for(var i=-4.5-1;i<=4.5;i++){
+for (var  j=-4.5; j<=4.5;j++){
+d=Math.sqrt(i*i+j*j);
+
+if(d<=4.5){licznik_wys1++;}
+}
+}
+document.write("licznik="+licznik_wys1+"<br>");
+
+
+var licznik_wys2=0;
+for(var i=-128;i<=128;i++){
+for (var  j=-128; j<=128;j++){
+d=Math.sqrt(i*i+j*j);
+if(d<=128){licznik_wys2++;}
+}
+
+}
+document.write("licznik="+licznik_wys2+"<br>");
+
+
+
+var licznik_wys3=0;
+for(var i=-1028;i<=1028;i++){
+for (var  j=-1028; j<=1028;j++){
+d=Math.sqrt(i*i+j*j);
+if(d<=1028){licznik_wys3++;}
+}
+}
+document.write("licznik="+licznik_wys3+"<br>");
+
+
+
+
+
+</script>
+
+<table border="2">
+   <tr>
+      <td>promien koła</td><td>liczba punktow kratowych N(R)</td>
+   </tr>
+   <tr>
+      <td>2.01</td> <td><script>document.write(licznik_wys)</script></td> 
+   </tr>
+   <tr>
+      <td>4.50</td> <td><script>document.write(licznik_wys1)</script></td> 
+   </tr>
+   <tr>
+      <td>128</td> <td><script>document.write(licznik_wys2)</script></td> 
+   </tr>
+   <tr>
+      <td>1028</td> <td><script>document.write(licznik_wys3)</script></td> 
+   </tr>
+</table>
+</table>
+
+
+
+</div>
+
+</body>
+</html>
